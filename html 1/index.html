@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSalo – Skills Today, Brighter Tomorrows</title>
+  <meta name="description" content="SkillSalo is a local skill-based micro-service marketplace connecting people who have skills with people who need them.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 230'><rect width='240' height='230' rx='40' fill='%23f7f1e8'/><circle cx='84' cy='52' r='24' fill='%230d9488'/><path d='M 198 86 C 194 42, 152 34, 120 62 C 94 84, 62 78, 62 114 C 62 146, 124 152, 134 176 C 142 194, 118 206, 98 208 C 142 214, 198 192, 196 158 C 194 128, 126 122, 118 98 C 110 74, 158 58, 198 86 Z' fill='%230d9488'/><path d='M 148 70 C 108 72, 90 92, 92 114 C 94 138, 152 146, 156 170 C 160 188, 136 202, 108 206 C 148 204, 180 184, 176 160 C 172 134, 116 126, 116 104 C 116 88, 130 76, 148 70 Z' fill='%2313385c'/><circle cx='206' cy='182' r='21' fill='%23ea6a0a'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="brand">
+        <!-- NAVBAR LOGO -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 230" width="36" height="36" class="nav-logo" aria-hidden="true">
+          <rect width="240" height="230" rx="28" fill="#f7f1e8"/>
+          <circle cx="84" cy="52" r="24" fill="#0d9488"/>
+          <path d="M 198 86 C 194 42, 152 34, 120 62 C 94 84, 62 78, 62 114 C 62 146, 124 152, 134 176 C 142 194, 118 206, 98 208 C 142 214, 198 192, 196 158 C 194 128, 126 122, 118 98 C 110 74, 158 58, 198 86 Z" fill="#0d9488"/>
+          <path d="M 74 75 C 36 82, 34 126, 68 134 C 50 116, 54 90, 74 75 Z" fill="#0d9488"/>
+          <path d="M 60 136 C 10 144, 12 192, 78 194 C 44 182, 38 154, 60 136 Z" fill="#0d9488"/>
+          <path d="M 148 70 C 108 72, 90 92, 92 114 C 94 138, 152 146, 156 170 C 160 188, 136 202, 108 206 C 148 204, 180 184, 176 160 C 172 134, 116 126, 116 104 C 116 88, 130 76, 148 70 Z" fill="#13385c"/>
+          <rect x="172" y="6" width="14" height="34" rx="7" transform="rotate(8 179 23)" fill="#ea6a0a"/>
+          <rect x="196" y="18" width="14" height="32" rx="7" transform="rotate(42 203 34)" fill="#ea6a0a"/>
+          <rect x="206" y="48" width="30" height="13" rx="6.5" transform="rotate(-12 221 54)" fill="#ea6a0a"/>
+          <circle cx="206" cy="182" r="21" fill="#ea6a0a"/>
+          <path d="M 72 198 C 106 232, 182 234, 218 202 C 204 198, 192 190, 186 180 C 156 208, 104 212, 72 198 Z" fill="#ea6a0a"/>
+          <g transform="translate(168, 80) rotate(18)" fill="#13385c">
+            <path d="M 0 4 C 10 0, 20 2, 25 7 L 25 27 C 20 22, 10 20, 0 24 Z"/>
+            <path d="M 52 4 C 42 0, 32 2, 27 7 L 27 27 C 32 22, 42 20, 52 24 Z"/>
+            <path d="M 0 28 C 10 24, 20 26, 26 31 C 32 26, 42 24, 52 28 L 52 32 C 42 28, 32 30, 26 35 C 20 30, 10 28, 0 32 Z"/>
+          </g>
+          <g transform="translate(218, 138)" fill="#13385c">
+            <circle cx="0" cy="0" r="14"/>
+            <rect x="-3.5" y="-20" width="7" height="40" rx="2"/>
+            <rect x="-20" y="-3.5" width="40" height="7" rx="2"/>
+            <rect x="-3.5" y="-20" width="7" height="40" rx="2" transform="rotate(45)"/>
+            <rect x="-3.5" y="-20" width="7" height="40" rx="2" transform="rotate(-45)"/>
+            <circle cx="0" cy="0" r="6.5" fill="#f7f1e8"/>
+          </g>
+          <g transform="translate(44, 148) rotate(-12)" fill="#13385c">
+            <rect x="4" y="0" width="38" height="26" rx="4"/>
+            <rect x="9" y="5" width="28" height="16" rx="1.5" fill="#f7f1e8"/>
+            <polygon points="20,9 20,19 23,16.5 26,20 28,19 25,15.5 28.5,15.5" fill="#13385c"/>
+            <path d="M 0 28 L 46 28 L 42 35 C 41 37, 39 38, 36 38 L 10 38 C 7 38, 5 37, 4 35 Z"/>
+          </g>
+          <g transform="translate(114, 162) rotate(42)" fill="#13385c">
+            <path d="M 7 0 C 12 8, 14 14, 11 20 L 3 20 C 0 14, 2 8, 7 0 Z"/>
+            <rect x="3.5" y="22" width="7" height="4" rx="1"/>
+            <path d="M 4 28 L 10 28 L 9 46 C 9 48, 5 48, 5 46 Z"/>
+          </g>
+        </svg>
+        <span>Skill<b class="salo">Salo</b></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#find">Find a Skill</a></li>
+        <li><a href="#prototype">Our Prototype</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contact" class="btn btn-small">Join the waitlist</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME / HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <!-- HERO LOGO -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 230" width="72" height="72" class="hero-logo" aria-label="SkillSalo logo">
+            <rect width="240" height="230" rx="28" fill="#f7f1e8"/>
+            <circle cx="84" cy="52" r="24" fill="#0d9488"/>
+            <path d="M 198 86 C 194 42, 152 34, 120 62 C 94 84, 62 78, 62 114 C 62 146, 124 152, 134 176 C 142 194, 118 206, 98 208 C 142 214, 198 192, 196 158 C 194 128, 126 122, 118 98 C 110 74, 158 58, 198 86 Z" fill="#0d9488"/>
+            <path d="M 74 75 C 36 82, 34 126, 68 134 C 50 116, 54 90, 74 75 Z" fill="#0d9488"/>
+            <path d="M 60 136 C 10 144, 12 192, 78 194 C 44 182, 38 154, 60 136 Z" fill="#0d9488"/>
+            <path d="M 148 70 C 108 72, 90 92, 92 114 C 94 138, 152 146, 156 170 C 160 188, 136 202, 108 206 C 148 204, 180 184, 176 160 C 172 134, 116 126, 116 104 C 116 88, 130 76, 148 70 Z" fill="#13385c"/>
+            <rect x="172" y="6" width="14" height="34" rx="7" transform="rotate(8 179 23)" fill="#ea6a0a"/>
+            <rect x="196" y="18" width="14" height="32" rx="7" transform="rotate(42 203 34)" fill="#ea6a0a"/>
+            <rect x="206" y="48" width="30" height="13" rx="6.5" transform="rotate(-12 221 54)" fill="#ea6a0a"/>
+            <circle cx="206" cy="182" r="21" fill="#ea6a0a"/>
+            <path d="M 72 198 C 106 232, 182 234, 218 202 C 204 198, 192 190, 186 180 C 156 208, 104 212, 72 198 Z" fill="#ea6a0a"/>
+            <g transform="translate(168, 80) rotate(18)" fill="#13385c">
+              <path d="M 0 4 C 10 0, 20 2, 25 7 L 25 27 C 20 22, 10 20, 0 24 Z"/>
+              <path d="M 52 4 C 42 0, 32 2, 27 7 L 27 27 C 32 22, 42 20, 52 24 Z"/>
+              <path d="M 0 28 C 10 24, 20 26, 26 31 C 32 26, 42 24, 52 28 L 52 32 C 42 28, 32 30, 26 35 C 20 30, 10 28, 0 32 Z"/>
+            </g>
+            <g transform="translate(218, 138)" fill="#13385c">
+              <circle cx="0" cy="0" r="14"/>
+              <rect x="-3.5" y="-20" width="7" height="40" rx="2"/>
+              <rect x="-20" y="-3.5" width="40" height="7" rx="2"/>
+              <rect x="-3.5" y="-20" width="7" height="40" rx="2" transform="rotate(45)"/>
+              <rect x="-3.5" y="-20" width="7" height="40" rx="2" transform="rotate(-45)"/>
+              <circle cx="0" cy="0" r="6.5" fill="#f7f1e8"/>
+            </g>
+            <g transform="translate(44, 148) rotate(-12)" fill="#13385c">
+              <rect x="4" y="0" width="38" height="26" rx="4"/>
+              <rect x="9" y="5" width="28" height="16" rx="1.5" fill="#f7f1e8"/>
+              <polygon points="20,9 20,19 23,16.5 26,20 28,19 25,15.5 28.5,15.5" fill="#13385c"/>
+              <path d="M 0 28 L 46 28 L 42 35 C 41 37, 39 38, 36 38 L 10 38 C 7 38, 5 37, 4 35 Z"/>
+            </g>
+            <g transform="translate(114, 162) rotate(42)" fill="#13385c">
+              <path d="M 7 0 C 12 8, 14 14, 11 20 L 3 20 C 0 14, 2 8, 7 0 Z"/>
+              <rect x="3.5" y="22" width="7" height="4" rx="1"/>
+              <path d="M 4 28 L 10 28 L 9 46 C 9 48, 5 48, 5 46 Z"/>
+            </g>
+          </svg>
+          <h1>Skills Today, <br>Brighter Tomorrows.</h1>
+          <p class="lead">SkillSalo is a local marketplace for small, practical services. Find someone who can help, or offer what you already know how to do.</p>
+          <form class="hero-search" id="hero-search" role="search">
+            <label for="hero-q" class="sr">What skill do you need?</label>
+            <input type="search" id="hero-q" placeholder="Try: video editing, tutor, makeup..." autocomplete="off">
+            <button type="submit" class="btn">Find</button>
+          </form>
+          <div class="hero-actions">
+            <a href="#contact" class="btn">Join the waitlist</a>
+            <a href="#video" class="btn btn-ghost">Watch our 1-minute video</a>
+          </div>
+        </div>
+        <div class="skill-cloud" aria-label="Examples of skills on SkillSalo">
+          <span class="s s1">video editing</span>
+          <span class="s s2">math tutoring</span>
+          <span class="s s3">makeup</span>
+          <span class="s s4">furniture repair</span>
+          <span class="s s5">Canva design</span>
+          <span class="s s6">router setup</span>
+          <span class="s s7">sewing</span>
+          <span class="s s8">prompt engineering</span>
+          <span class="s s9">photography</span>
+          <span class="s s10">Excel help</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO / PROBLEM -->
+    <section class="section intro">
+      <div class="container two-col">
+        <div>
+          <h2>Every skill has value. Every person has something to offer.</h2>
+        </div>
+        <div class="prose">
+          <p>Many people have useful skills but struggle to find clients or earn from them. Meanwhile, students, individuals, and small businesses need affordable help and don’t know where to find capable people nearby.</p>
+          <p>SkillSalo connects these two sides. You don’t need to be a professional freelancer: if you can apply makeup, fix a chair, edit a video, or tutor mathematics, someone near you can use that.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIND A SKILL (search, filter, click, type) -->
+    <section id="find" class="section find">
+      <div class="container">
+        <h2>Find a skill near you</h2>
+        <p class="section-sub">Type to search, tap a category, then click a provider to send an inquiry.</p>
+        <div class="search-bar">
+          <input type="search" id="find-q" placeholder="Search skills or names" aria-label="Search skills or names" autocomplete="off">
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="Categories">
+          <button class="chip active" data-cat="All">All</button>
+          <button class="chip" data-cat="Technical">Technical</button>
+          <button class="chip" data-cat="Practical">Practical</button>
+          <button class="chip" data-cat="Creative">Creative</button>
+          <button class="chip" data-cat="Education">Education</button>
+        </div>
+        <p id="count" class="count" aria-live="polite"></p>
+        <div class="cards" id="cards"></div>
+        <p id="empty" class="empty" hidden>No match yet. Try another word, or <a href="#contact">tell us what you need</a>.</p>
+      </div>
+    </section>
+
+    <dialog id="modal" class="modal">
+      <form method="dialog"><button class="close" aria-label="Close">&times;</button></form>
+      <div class="m-head"><span class="avatar" id="m-av"></span><div><h3 id="m-name"></h3><p id="m-skill" class="muted"></p></div></div>
+      <p id="m-about"></p>
+      <p class="m-meta" id="m-meta"></p>
+      <form id="m-form" class="form">
+        <label for="m-msg">Your message</label>
+        <textarea id="m-msg" rows="3" placeholder="Tell them what you need, your budget, and when." required></textarea>
+        <label for="m-mail">Your email</label>
+        <input type="email" id="m-mail" placeholder="you@email.com" required>
+        <button type="submit" class="btn">Send inquiry</button>
+        <p id="m-status" class="form-status" role="status"></p>
+      </form>
+    </dialog>
+
+    <!-- OUR PROTOTYPE -->
+    <section id="prototype" class="section">
+      <div class="container">
+        <h2>Our prototype</h2>
+        <p class="section-sub">SkillSalo is made of three parts that work together. Scroll sideways to see the screens.</p>
+
+        <div class="pills">
+          <button class="pill active" data-who="all">All screens</button>
+          <button class="pill" data-who="seeker">Seeker app</button>
+          <button class="pill" data-who="provider">Provider app</button>
+        </div>
+
+        <div class="track">
+          <figure class="screen" data-app="seeker">
+            <div class="phone">
+              <img src="skildiscovery.png" alt="Skill discovery screen">
+            
+            </div>
+            <figcaption><strong>Skill discovery</strong><span>Seeker app</span></figcaption>
+          </figure>
+          <figure class="screen" data-app="seeker">
+            <div class="phone">
+              <img src="quickai.png" alt="AI QuickMatch screen">
+            </div>
+            <figcaption><strong>AI QuickMatch</strong><span>Seeker app</span></figcaption>
+          </figure>
+          <figure class="screen" data-app="seeker">
+            <div class="phone">
+              <img src="track1.png" alt="Track the work screen">
+            </div>
+            <figcaption><strong>Track the work</strong><span>Seeker app</span></figcaption>
+          </figure>
+          <figure class="screen" data-app="provider">
+            <div class="phone">
+              <img src="mylisting1.png" alt="My listings screen">
+            </div>
+            <figcaption><strong>My listings</strong><span>Provider app</span></figcaption>
+          </figure>
+          <figure class="screen" data-app="provider">
+            <div class="phone">
+              <img src="inquire1.png" alt="Inquiries screen">
+            </div>
+            <figcaption><strong>Inquiries</strong><span>Provider app</span></figcaption>
+          </figure>
+          <figure class="screen" data-app="provider">
+            <div class="phone">
+              <img src="skillprof.png" alt="SkillProof screen">
+            </div>
+            <figcaption><strong>SkillProof</strong><span>Provider app</span></figcaption>
+          </figure>
+        </div>
+
+        <h3 class="features-title">Seven features</h3>
+        <ol class="features">
+          <li><h4>AI QuickMatch</h4><p>Describe what you need. We rank suitable providers by skill, budget, location, and availability.</p></li>
+          <li><h4>OpenMatch</h4><p>Seekers post the services they need. Providers post what they offer. Both receive inquiries.</p></li>
+          <li><h4>SkillBridge</h4><p>Pay for a service, swap skills directly, or mix both with a cash top-up. The agreement is recorded.</p></li>
+          <li><h4>Value Completion Record</h4><p>Tracks the agreed work, deliverables, payment or exchange status, and the final outcome.</p></li>
+          <li><h4>SkillProof</h4><p>Build credibility from completed work, ratings, reviews, and portfolio evidence. Not an official certification.</p></li>
+          <li><h4>SaloSquad</h4><p>Form a team with complementary skills for bigger projects and track each person’s contribution.</p></li>
+          <li><h4>SaloBoost</h4><p>Providers can promote a service or portfolio project through clearly labeled sponsored placements.</p></li>
+        </ol>
+
+        <h3 class="features-title">How a transaction works</h3>
+        <ol class="flow">
+          <li>Open SkillSalo and discover skills</li>
+          <li>Use AI QuickMatch or OpenMatch to view suitable providers</li>
+          <li>Send an inquiry and negotiate</li>
+          <li>Confirm a SkillBridge agreement</li>
+          <li>Choose paid service, skill exchange, or hybrid</li>
+          <li>Track the work and payment, then confirm completion</li>
+          <li>Earn an eligible SkillProof record</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Services you can find</h2>
+        <p class="section-sub">Specific skills, not just broad labels.</p>
+        <dl class="cat-list">
+          <div><dt>Technical</dt><dd>Prompt engineering, AI tool assistance, web development, programming, networking, IT troubleshooting, UI/UX, MySQL, spreadsheet automation</dd></div>
+          <div><dt>Practical</dt><dd>Makeup, hairstyling, carpentry, welding, furniture repair, sewing, gardening, cleaning, event setup</dd></div>
+          <div><dt>Creative</dt><dd>Videography, video editing, photography, Canva design, painting, digital illustration, handmade crafts, calligraphy</dd></div>
+          <div><dt>Education &amp; Academic</dt><dd>Mathematics tutoring, English tutoring, computer lessons, Excel assistance, proofreading, reviewer creation</dd></div>
+        </dl>
+
+        <!-- CALL TO ACTION -->
+        <div class="cta">
+          <h3>Got a skill, or need one?</h3>
+          <p>Join the waitlist and be first to try SkillSalo.</p>
+          <a href="#contact" class="btn">Join the waitlist</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About us</h2>
+        <div class="two-col about-grid">
+          <div class="prose">
+            <h3>Our background</h3>
+            <p>SkillSalo started as a startup project for our Entrepreneurship course at Davao del Norte State College. We noticed that small skills often go unused because the people who need them can’t find them, and the people who have them can’t reach customers.</p>
+            <h3>Mission</h3>
+            <p>To make small, practical, technical, and creative skills more accessible by helping people discover services, find opportunities, exchange skills, collaborate, and build credibility through completed work.</p>
+            <h3>Vision</h3>
+            <p>A community where every skill, however small, can become a useful service or opportunity.</p>
+          </div>
+          <div>
+            <h3>The team</h3>
+            <ul class="team">
+              <!-- Replace names and roles with your group members -->
+              <li><span class="avatar">D</span><div><strong>Dana Queen Semini</strong><br>CEO</div></li>
+              <li><span class="avatar">J</span><div><strong>Jacob G. Escalera</strong><br>COO</div></li>
+              <li><span class="avatar">J</span><div><strong>Jellian Ronquillo</strong><br>CTO</div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT + FORM -->
+    <section id="contact" class="section contact">
+      <div class="container two-col">       
+        <div>
+          <h2>Contact us</h2>
+          <p class="section-sub">Questions, ideas, or want early access? Send us a message.</p>
+          <ul class="contact-list">
+            <li><strong>Email</strong><br><a href="mailto:skillsalo.team1@gmail.com">skillsalo.team1@gmail.com</a></li>
+            <li><strong>Phone</strong><br>+63 975 454 8973</li>
+            <li><strong>Address</strong><br>Davao del Norte State College, New Visayas, Panabo City</li>
+            <li><strong>Social</strong><br><a href="https://www.facebook.com/profile.php?id=61596142514951" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+
+        <form id="inquiry-form" class="form" action="#" method="post">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="example: Jilian Erica Ronquillo" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="examplejilianerica@gmail.com" required>
+
+          <label for="interest">I want to</label>
+          <select id="interest" name="interest" required>
+            <option value="" disabled selected>Choose one</option>
+            <option>Offer my skills</option>
+            <option>Find a service</option>
+            <option>Ask a question</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us what you need or what you can do." required></textarea>
+
+          <button type="submit" class="btn">Send message</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div>
+        <h4>SkillSalo</h4>
+        <p>Skills Today, Brighter Tomorrows. A local marketplace connecting people who have skills with people who need them.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <a href="#home">Home</a>
+        <a href="#prototype">Our Prototype</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <a href="mailto:skillsalo.team1@gmail.com">skillsalo.team1@gmail.com</a>
+        <a href="tel:+639754548973">+63 975 454 8973</a>
+        <a href="https://www.facebook.com/profile.php?id=61596142514951" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="container foot-bottom">
+      <span>© 2026 SkillSalo. All rights reserved.</span>
+      <span>ISSPEC3 Final Project · Davao del Norte State College</span>
+    </div>
+  </footer>
+
+  <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+
+  <script>
+    // ---- Find a skill: search + filter + modal ----
+    var PROVIDERS=[
+      {n:"Stephen Jay",s:"Video editing",c:"Creative",p:"From ₱300",r:"4.9",a:"Edits birthday videos, reels, and event highlights. Quick turnaround."},
+      {n:"Dana Queen",s:"Web development",c:"Technical",p:"From ₱800",r:"4.8",a:"Builds simple HTML/CSS sites for small businesses and students."},
+      {n:"Ryan Dave",s:"Makeup artist",c:"Practical",p:"From ₱500",r:"5.0",a:"Event, graduation, and wedding makeup. Comes to your location."},
+      {n:"Jellian Erica",s:"Furniture repair",c:"Practical",p:"From ₱250",r:"4.7",a:"Fixes chairs, tables, and cabinets. Basic carpentry and welding."},
+      {n:"Michel One",s:"Mathematics tutoring",c:"Education",p:"From ₱200/hr",r:"4.9",a:"Helps with algebra, statistics, and board-exam review."},
+      {n:"Sonny Geraldo",s:"Canva design",c:"Creative",p:"From ₱150",r:"4.8",a:"Posters, presentations, and social media layouts."},
+      {n:"Jacob Escalera",s:"IT troubleshooting",c:"Technical",p:"From ₱300",r:"4.6",a:"Router setup, Wi-Fi problems, and basic laptop repair."},
+      {n:"Michel Two",s:"Excel assistance",c:"Education",p:"From ₱250",r:"4.8",a:"Formulas, spreadsheets, and simple automation."}
+    ];
+    var cat="All", cards=document.getElementById('cards'), q=document.getElementById('find-q');
+    function render(){
+      var t=q.value.trim().toLowerCase(), n=0; cards.innerHTML="";
+      PROVIDERS.forEach(function(p,i){
+        if((cat==="All"||p.c===cat)&&(p.n+" "+p.s+" "+p.c).toLowerCase().indexOf(t)>-1){
+          n++;
+          var b=document.createElement('button'); b.className='card'; b.type='button';
+          b.innerHTML='<span class="avatar">'+p.n.charAt(0)+'</span><strong>'+p.s+'</strong><span class="muted">'+p.n+'</span><span class="row"><span class="tag">'+p.c+'</span><span>★ '+p.r+'</span></span><span class="price">'+p.p+'</span>';
+          b.onclick=function(){openModal(p)}; cards.appendChild(b);
+        }
+      });
+      document.getElementById('empty').hidden=n>0;
+      document.getElementById('count').textContent=n+' provider'+(n===1?'':'s')+' found';
+    }
+    q.addEventListener('input',render);
+    document.getElementById('chips').addEventListener('click',function(e){
+      if(!e.target.dataset.cat)return; cat=e.target.dataset.cat;
+      document.querySelectorAll('.chip').forEach(function(c){c.classList.toggle('active',c===e.target)}); render();
+    });
+    var modal=document.getElementById('modal');
+    function openModal(p){
+      document.getElementById('m-av').textContent=p.n.charAt(0);
+      document.getElementById('m-name').textContent=p.n;
+      document.getElementById('m-skill').textContent=p.s;
+      document.getElementById('m-about').textContent=p.a;
+      document.getElementById('m-meta').textContent=p.p+'  ·  ★ '+p.r+'  ·  '+p.c;
+      document.getElementById('m-status').textContent='';
+      modal.showModal();
+    }
+    document.getElementById('m-form').addEventListener('submit',function(e){
+      e.preventDefault(); document.getElementById('m-status').textContent='Inquiry sent! The provider will reply soon.'; this.reset();
+    });
+    modal.addEventListener('click',function(e){if(e.target===modal)modal.close()});
+    document.getElementById('hero-search').addEventListener('submit',function(e){
+      e.preventDefault(); q.value=document.getElementById('hero-q').value; render();
+      document.getElementById('find').scrollIntoView({behavior:'smooth'});
+    });
+
+    // ---- Prototype screens filter ----
+    var pills = document.querySelectorAll('.pill');
+    pills.forEach(function (pill) {
+      pill.addEventListener('click', function () {
+        pills.forEach(function (p) { p.classList.remove('active'); });
+        pill.classList.add('active');
+        document.querySelectorAll('.screen').forEach(function (s) {
+          s.hidden = pill.dataset.who !== 'all' && s.dataset.app !== pill.dataset.who;
+        });
+      });
+    });
+
+    render();
+
+    // Simple form handling (no backend required)
+    document.getElementById('inquiry-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('form-status').textContent = 'Thanks! Your message was sent. We will reply soon.';
+      this.reset();
+    });
+
+    // Close mobile menu after tapping a link
+    document.querySelectorAll('.nav-links a').forEach(function (a) {
+      a.addEventListener('click', function () { document.getElementById('nav-toggle').checked = false; });
+    });
+  </script>
+</body>
+</html>
